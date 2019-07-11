@@ -1,6 +1,6 @@
 import unittest
 
-from elkdist.gaussian_distrbution import Gaussian
+from elkdist.gaussian_distribution import Gaussian
 from elkdist.binomial_distribution import Binomial
 
 
