@@ -20,13 +20,14 @@ This project is a fairly simple package that provides some quick
 methods for initializing and plotting common probability distributions.
 
 ## File Descriptions <a name="files"></a>
-- /src
+- /elkdist/
   - general_distributions.py: Module containing the parent class with some common functionality between all distributions
   - gaussian_distribution.py : Module containing implementation class for a Gaussian/Normal distribution
   - binomial_distribution.py :  Module containing implementation class for a Binomial distribution
-- numbers.txt: Test file for testing the Gaussian distribution class and its methods
-- numbers_binomial.txt: Test file for testing the Bionomial distribution class and its methods
-- tests.py: Unit tests for testing all classes and their methods.
+- /elkdist/tests/
+  - numbers.txt: Test file for testing the Gaussian distribution class and its methods
+  - numbers_binomial.txt: Test file for testing the Bionomial distribution class and its methods
+  - tests.py: Unit tests for testing all classes and their methods.
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
