@@ -32,6 +32,18 @@ class Distribution:
         f = math.factorial
         return f(n) / f(k) / f(n - k)
 
+    def pdf(self, k):
+        """
+        Probability density function calculator for a distribution.
+
+        Args:
+            k (float): point for calculating the probability density function
+
+        Returns:
+            float: probability density function output
+        """
+        raise NotImplementedError
+
     def plot_histogram(self):
         """
         Function to output a histogram of the instance variable data using
