@@ -1,4 +1,6 @@
 import math
+import matplotlib.pyplot as plt
+
 from .general_distribution import Distribution
 
 
@@ -107,3 +109,27 @@ class Binomial(Distribution):
 
         return self.n_choose_k(self.n, k) * (self.p ** k) * (1 - self.p) ** (
             self.n - k)
+
+    def plot_bar_pdf(self):
+        """
+        Function to plot the pdf of Binomial distribution
+
+        Returns:
+            list: x values for the pdf plot
+            list: y values for the pdf plot
+        """
+
+        x = []
+        y = []
+
+        for i in range(self.n + 1):
+            x.append(i)
+            y.append(self.pdf(i))
+
+        # make the plots
+        plt.bar(x, y)
+        plt.title('Distribution of Outcomes')
+        plt.ylabel('Probability')
+        plt.xlabel('Outcome')
+
+        plt.show()
