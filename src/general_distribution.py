@@ -18,6 +18,27 @@ class Distribution:
         self.stdev = sigma
         self.data = []
 
+    def __add__(self, other):
+        """
+        Function to add together two distributions
+
+        Args:
+            other (Distribution): Distribution instance
+
+        Returns:
+            Distribution: Distribution instance
+        """
+        raise NotImplementedError
+
+    def __repr__(self):
+        """
+        Function to output the characteristics of the distribution instance
+
+        Returns:
+            string: characteristics of the distribution
+        """
+        raise NotImplementedError
+
     @staticmethod
     def n_choose_k(n, k):
         """
