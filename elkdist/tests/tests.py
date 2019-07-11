@@ -1,13 +1,13 @@
 import unittest
 
-from elk_distributions import Gaussian
-from elk_distributions import Binomial
+from elkdist.gaussian_distrbution import Gaussian
+from elkdist.binomial_distribution import Binomial
 
 
 class TestGaussianClass(unittest.TestCase):
     def setUp(self):
         self.gaussian = Gaussian(25, 2)
-        self.gaussian.read_data_file('numbers.txt')
+        self.gaussian.read_data_file('elkdist/tests/numbers.txt')
 
     def test_initialization(self):
         self.assertEqual(self.gaussian.mean, 25, 'incorrect mean')
@@ -51,7 +51,7 @@ class TestGaussianClass(unittest.TestCase):
 class TestBinomialClass(unittest.TestCase):
     def setUp(self):
         self.binomial = Binomial(0.4, 20)
-        self.binomial.read_data_file('numbers_binomial.txt')
+        self.binomial.read_data_file('elkdist/tests/numbers_binomial.txt')
 
     def test_initialization(self):
         self.assertEqual(self.binomial.p, 0.4, 'p value incorrect')
