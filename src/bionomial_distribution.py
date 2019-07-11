@@ -92,6 +92,8 @@ class Binomial(Distribution):
         self.mean = self.calculate_mean()
         self.stdev = self.calculate_stdev()
 
+        return self.p, self.n
+
     def pdf(self, k):
         """
         Probability density function calculator for the gaussian distribution.
