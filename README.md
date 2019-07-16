@@ -9,15 +9,26 @@ Probability Distributions Package
 5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
-
 - Requirements
   - Python 3.X
   - matplotlib
+- To install the package:
+  ```
+  pip install elkdist
+  ```
+- The package can be found [here](https://pypi.org/project/elkdist/)
 
 ## Project Description<a name="Project"></a>
 
 This project is a fairly simple package that provides some quick
 methods for initializing and plotting common probability distributions.
+
+As of right now, this package only contains the following distributions:
+- Binomial
+- Gaussian
+ 
+However, there will be more added as time goes by.
+  
 
 ## File Descriptions <a name="files"></a>
 - /elkdist/
